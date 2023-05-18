@@ -19,7 +19,7 @@ const Parent=()=>{
             <button onClick={handleButtonClick}>Show Modal</button>
             <Modal show={showModal} onClose={handleCloseModal}>
                 <h2>Modal Content</h2>
-                <p className=".modal">This is the content of the modal.</p>
+                <p className="modal">This is the content of the modal.</p>
             </Modal>
             
         </div>
