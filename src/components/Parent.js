@@ -17,8 +17,8 @@ const Parent=()=>{
         <div className="parent">
             <h1>Parent Component</h1>
             <button onClick={handleButtonClick}>Show Modal</button>
-            <Modal className="modal" show={showModal} onClose={handleCloseModal}>
-                <h3 className="modal">Modal Content</h3>
+            <Modal show={showModal} onClose={handleCloseModal}>
+                <h3 className="">Modal Content</h3>
                 <p className="modal">This is the content of the modal.</p>
             </Modal>
             
