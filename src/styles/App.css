@@ -1,1 +1,29 @@
 
+
+  .modal-overlay.show {
+    display:block;
+  }
+
+  .modal-overlay.hide {
+    display: none;
+  }
+  .parent{
+    background-color: cadetblue;
+    padding: 10px;
+    
+
+  }
+
+  .modal-dialog{
+    background-color: coral;
+    padding: 10px;
+
+  }
+
+  
+ 
+  
+  
+  
+ 
+  
