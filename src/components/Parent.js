@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Modal from "./Modal";
 const Parent=()=>{
-    const [showModal,setShowModal]=useState(false);
+    const [showModal,setShowModal]=useState(true);
 
     const handleButtonClick=()=>{
         setShowModal(true);
