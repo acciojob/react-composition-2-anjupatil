@@ -1,16 +1,20 @@
-import React, { useState } from "react";
+import React from "react";
 
-const Modal=({show,onClose,children})=>{
-    return(
-        <div className={`modal-overlay ${show? "show":"hide"}`}>
-            <div className="modal-dialog">
-                <button className="modal-close" onClick={onClose}>
-                    Close
+const Modal = ({ show, onClose, children }) => {
+  if (!show) {
+    return null; // Don't render the modal if show is false
+  }
 
-                </button>
-                {children}
-            </div>
-        </div>
-    )
-}
+  return (
+    <div className="modal-overlay">
+      <div className="modal-dialog">
+        <button className="modal-close" onClick={onClose}>
+          Close
+        </button>
+        {children}
+      </div>
+    </div>
+  );
+};
+
 export default Modal;
